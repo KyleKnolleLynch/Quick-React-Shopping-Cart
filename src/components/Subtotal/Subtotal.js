@@ -2,7 +2,7 @@ import React from 'react';
 
 const Subtotal = props => {
   return (
-    <div className='grid-2'>
+    <div className='grid-2 mt-3'>
       <div>
         <p>Subtotal</p>
       </div>

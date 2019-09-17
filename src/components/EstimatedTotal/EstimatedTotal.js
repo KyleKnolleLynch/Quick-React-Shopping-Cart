@@ -2,7 +2,7 @@ import React from 'react';
 
 const EstimatedTotal = props => {
   return (
-    <div className='grid-2 my-1'>
+    <div className='grid-2 my-3'>
       <div>
         <h3>Est. Total</h3>
       </div>

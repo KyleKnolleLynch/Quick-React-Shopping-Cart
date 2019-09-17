@@ -1,35 +1,26 @@
 import React from 'react';
-import { OverlayTrigger } from 'react-bootstrap';
-
-const styles = {
-  pickupSavings: {
-    textDecoration: 'underline'
-  },
-  totalSavings: {
-    color: 'red',
-    fontWeight: 800
-  }
-};
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 const PickupSavings = props => {
   const tooltip = (
-    <div id='tooltip' className='badge badge-dark'>
+    <Tooltip id='tooltip' className='badge-dark'>
       <p>
-        Pick up your order in your local store location for additional savings.
+        Pick up your order at your local store location for additional savings.
       </p>
-    </div>
+    </Tooltip>
   );
 
   return (
     <div className='grid-2'>
       <div>
         <OverlayTrigger placement='bottom' overlay={tooltip}>
-          <div style={styles.pickupSavings}>
+          <div style={{ textDecoration: 'underline' }}>
             <p>Pickup Savings</p>
           </div>
         </OverlayTrigger>
       </div>
-      <div style={styles.totalSavings}>{`$${props.price}`}</div>
+      <div style={{ color: 'red', fontWeight: 800 }}>{`$${props.price}`}</div>
     </div>
   );
 };

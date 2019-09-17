@@ -2,7 +2,8 @@
 
 /* Global Styles */
 :root {
-  --primary-color: rgb(233, 139, 31);
+  --primary-color: #e98b1f;
+  --secondary-color:  #007bff;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #bb0114;
@@ -253,6 +254,11 @@ img {
   color: #fff;
 }
 
+.btn-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
 .btn-light,
 .bg-light,
 .badge-light,
@@ -305,6 +311,11 @@ img {
 
 .box-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.strike-through {
+  text-decoration: line-through;
+  color: #888;
 }
 
 .round-img {

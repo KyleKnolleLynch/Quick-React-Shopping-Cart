@@ -5,7 +5,7 @@ const TaxFees = props => {
     <div className='grid-2'>
       <div>
         <p>Est. Taxes & Fees</p>
-        <p>(based on 78727)</p>
+        <p style={{ marginTop: '-1rem' }}>(based on 78727)</p>
       </div>
       <div>{`$${props.taxes}`}</div>
     </div>
